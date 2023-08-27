@@ -1,0 +1,111 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ans{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+#player-choice{
+    background-color: black;
+    width: 60%;
+    height: 400px;
+    position: relative; 
+    margin: 8px auto;
+}
+#buttons{
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+#img-ins{
+    height: 40px;
+    width: 80%;
+    background-color: gray;
+    position: absolute; 
+    bottom: 16px; 
+    margin-top: 8px; 
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img-ins p{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+#ans> *{
+    height: 100%;
+    width: 50%;
+    background-color: black;  
+    position: relative;  
+}
+.cpu-score, .player-score {
+    height: 40px;
+    width: 80%;
+    background-color: gray;
+    position: absolute; 
+    top: 16px; 
+    left: 10%;
+}
+.cpu-display, .player-display {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    height: 70%;
+    width: 80%;
+    background-color: gray;
+}
+.cpu-display img, .player-display img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+#cpu-ans .cpu-score, #player-ans .player-score{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+} 
+.choice-display img.my-image {
+    display: initial;
+  }
+  #score-label{
+    border-right: 2px solid #0d0d0e;
+    padding: 8px;
+  }
+  #game-winner{
+    padding: 16px;
+  }
+  #ans> #reset-button{
+    background-image: linear-gradient(to bottom, #ff6347, #ff4500);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 200px; 
+    height: 40px; 
+}
+#ans> #reset-button:hover {
+    opacity: 0.8;
+}
